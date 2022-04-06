@@ -14,6 +14,7 @@ type ListNode struct {
 }
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+	// 创建一个存储结果的Listnode
 	head := &ListNode{Val: 0}
 	n1, n2, carry, current := 0, 0, 0, head
 	for l1 != nil || l2 != nil || carry != 0 {
